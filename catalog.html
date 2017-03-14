@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ас Акелу</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta name="keyword" content="">
+<meta name="description" content="">
+<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/slide.min.css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/range.css">
+
+</head>
+<body class="second-page">
+		<header class="header">
+			<div class="header-top-line">
+				<div class="header-top-line__inner">
+					<a href="" class="header-logo">
+						<img src="img/logo.png" alt="">
+					</a>
+					<div class="header-lang">
+						<a href="" class="header-lang__item">
+							Каз 
+						</a>
+						<a href="" class="header-lang__item active">
+							Рус  
+						</a>
+						<a href="" class="header-lang__item">
+							Eng  
+						</a>
+					</div>
+					<a href="" class="header-enter">
+						Войти / Зарегистрироваться
+					</a>
+				</div>
+			</div>
+			<div class="header-inner">
+				<div class="header-slogan">
+					единый сервис доставки еды!
+				</div>
+			</div>
+		</header>
+		<div class="middle-icon">
+			<div class="middle-icon__inner">
+				<div class="middle-icon__list">
+					<div class="icon-item">
+						<div class="icon-item__container tarelka">
+							<div class="icon-item__container--text">
+								Выберите ресторан
+							</div>
+						</div>
+					</div>
+					<div class="icon-item">
+						<div class="icon-item__container wifi">
+							<div class="icon-item__container--text">
+								Закажите еду
+							</div>
+						</div>
+					</div>
+					<div class="icon-item">
+						<div class="icon-item__container dostavka">
+							<div class="icon-item__container--text">
+								Ваша еда уже в пути!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container-inner">
+				<div class="side-bar">
+					<form action="" class="form">
+						<div class="side-bar-item">
+							<div class="side-bar-item__title">
+								блюдо:
+							</div>
+							<div class="side-bar-box">
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="pizza">
+									<label for="pizza">Пицца (29)</label>
+								</div>
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="sushi">
+									<label for="sushi">Суши (24)</label>
+								</div>
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="burger">
+									<label for="burger">Бургеры и донеры (34)</label>
+								</div>
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="shashlik" checked>
+									<label for="shashlik">Шашлыки (29)</label>
+								</div>
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="wok">
+									<label for="wok">Wok Лапша (19)</label>
+								</div>
+							</div>
+						</div>
+						<div class="side-bar-item">
+							<div class="side-bar-item__title">
+								сумма заказа:
+							</div>
+							<div class="side-bar-form">
+								<div class="side-bar-box">
+									<div id="slider-range"></div>
+									<input type="hidden" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+								
+								 	<div class="min-price"></div>
+								 	<div class="max-price"></div>
+								
+								</div>
+							</div>
+						</div>
+						<div class="side-bar-item">
+							<div class="side-bar-item__title">
+								критерии:
+							</div>
+							<div  class="side-bar-box">
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="new">
+									<label for="new">Новые</label>
+								</div>
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="promokod">
+									<label for="promokod">С промокодом</label>
+								</div>
+								<div class="side-bar-box__item">
+									<input type="checkbox" id="free">
+									<label for="free">Бесплатная доставка</label>
+								</div>
+							</div>
+							<div class="side-bar-item-button--container">
+								<button class="button">
+									показать
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="restaurants-box">
+					<form class="restaurants-filtr">
+						<div class="restaurants-filtr__item restaurants-filtr__item-city">
+							<span>ул.Ойтоган 15ул</span>
+							<button class="button restaurants-filtr__button--city">
+								изменить
+							</button>
+						</div>
+						<div class="restaurants-filtr__item ">
+							<input type="text" placeholder="Введите ресторан	">
+							<button class="button restaurants-filtr__button">
+								найти
+							</button>
+						</div>
+					</form>
+					<ul class="restaurant-list">
+						<li class="restaurant-item gold">
+							<div class="restaurant-item__img">
+								<img src="img/restaurant.jpg" alt="">
+							</div>
+							<div class="restaurant-item-box">
+								<div class="restaurant-item-box__top">
+									<div class="restaurant-name">
+											Название заведения
+									</div>
+									<ul class="reiting restaurant-item-box__top-reiting">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li class="empty"></li>
+										<div class="reiting-text">4/5</div>
+									</ul>
+								</div>
+								<div class="restaurant-item-box__info">
+									<div class="restaurant-info__item">
+										Минимальный заказ: <span>5.000 тг</span>
+									</div>
+									<div class="restaurant-info__item">
+										Стомость доставки:  <span>Бесплатно</span>
+									</div>
+									<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке...</p>
+								</div>
+								<div class="restaurant-item-box__bottom">
+									<div class="delivery-time">
+										Время доставки <span>30 минут</span>
+									</div>
+									<a href="catalog-second.html" class="button restaurants-filtr__button">
+										найти
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="restaurant-item premium">
+							<div class="restaurant-item__img">
+								<img src="img/restaurant.jpg" alt="">
+							</div>
+							<div class="restaurant-item-box">
+								<div class="restaurant-item-box__top">
+									<div class="restaurant-name close">
+											Название заведения
+									</div>
+									<ul class="reiting restaurant-item-box__top-reiting">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li class="empty"></li>
+										<div class="reiting-text">4/5</div>
+									</ul>
+								</div>
+								<div class="restaurant-item-box__info">
+									<div class="restaurant-info__item">
+										Минимальный заказ: <span>5.000 тг</span>
+									</div>
+									<div class="restaurant-info__item">
+										Стомость доставки:  <span>Бесплатно</span>
+									</div>
+									<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке...</p>
+								</div>
+								<div class="restaurant-item-box__bottom">
+									<div class="delivery-time">
+										Время доставки <span>30 минут</span>
+									</div>
+									<a href="catalog-second.html" class="button restaurants-filtr__button">
+										найти
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+				
+	<footer class="footer">
+		<div class="footer-inner">
+			<ul class="footer-nav">
+				<li>
+					<a href="">О компании</a>
+				</li>
+				<li>
+					<a href="">Как мы работаем</a>
+				</li>
+				<li>
+					<a href="">Регистрация заведений</a>
+				</li>
+			</ul>
+			<ul class="footer-soc-seti">
+				<li>
+					<a href="" >
+						<img src="img/vk.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="" >
+						<img src="img/face.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="" >
+						<img src="img/insta.png" alt="">
+					</a>
+				</li>
+			</ul>
+			<a href="" class="footer-logo">
+				<img src="img/footer-logo.png" alt="">
+			</a>
+			<div class="footer-copyright">
+				Все права защищены © 2017 год
+			</div>
+			<a href="" class="footer-confidentiality">
+				Политика конфидециальности
+			</a>
+			<a href="" class="footer-agreement">
+				Пользовательское соглашение
+			</a>
+		</div>
+	</footer>
+	
+  
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/range.js"></script>
+     <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/tab.js"></script>
+<script>
+  new WOW().init();
+</script>
+</body>
+</html>
