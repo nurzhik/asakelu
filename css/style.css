@@ -1102,17 +1102,20 @@ table td .table-item.edit-icon {
   position: relative;
   margin-bottom: 5px;
 }
-.order-client__name:after {
-  content: '';
-  width: 64px;
-  height: 14px;
-  background-image: url(../img/stats-l-cab.png);
-  background-repeat: no-repeat;
+.order-client__name span {
   display: block;
   position: absolute;
   right: 0;
   top: 50%;
   margin-top: -7px;
+  background-color: #ffc100;
+  color: #fff;
+  font-size: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
 }
 .order-client__name.not-adopted:after {
   background-position: -59px;
