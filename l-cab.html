@@ -116,7 +116,7 @@
 									Адрес:   <span>ул. Женис, дом 17, подъезд #1, этаж 7, квартира 47</span>
 								</div>
 								<div class="info-card__item order-button-container">
-								<a href="" class="button cancel">
+								<a href="#modal2" class="button cancel open_modal">
 									отказать
 								</a>
 								<a href="" class="button">
@@ -198,60 +198,46 @@
 			</div>
 		</div>
 			
-	<footer class="footer">
-		<div class="footer-inner">
-			<ul class="footer-nav">
-				<li>
-					<a href="">О компании</a>
-				</li>
-				<li>
-					<a href="">Как мы работаем</a>
-				</li>
-				<li>
-					<a href="">Регистрация заведений</a>
-				</li>
-			</ul>
-			<ul class="footer-soc-seti">
-				<li>
-					<a href="" >
-						<img src="img/vk.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="" >
-						<img src="img/face.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="" >
-						<img src="img/insta.png" alt="">
-					</a>
-				</li>
-			</ul>
-			<a href="" class="footer-logo">
-				<img src="img/footer-logo.png" alt="">
-			</a>
-			<div class="footer-copyright">
-				Все права защищены © 2017 год
-			</div>
-			<a href="" class="footer-confidentiality">
-				Политика конфидециальности
-			</a>
-			<a href="" class="footer-agreement">
-				Пользовательское соглашение
-			</a>
-		</div>
-	</footer>
+	
 	
   
+    <div id="modal2" class="modal_div"> <!-- скрытый див с уникальным id = modal1 -->
+	<span class="modal_close"></span>
+		<div class="modal-title">Выберите причину отказа ?</div>
+		<ul class="cancel-list">
+			<li>
+				<a href="">ПРимер 1</a>
+			</li>
+			<li>
+				<a href="">ПРимер 1</a>
+			</li>
+			<li>
+				<a href="">ПРимер 1</a>
+			</li>
+			<li>
+				<a href="">ПРимер 1</a>
+			</li>
+			<li>
+				<a href="">ПРимер 1</a>
+			</li>
+			<li>
+				<a href="">ПРимер 1</a>
+			</li>
+		</ul>
+	</div>	
+	<div id="overlay"></div>
     <script src="js/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	window.jQuery || document.write('<script type="text/javascript" src="js/jquery-1.6.2.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="js/jquery.rating-2.0.min.js"></script>
     <script src="js/range.js"></script>
      <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
 	<script src="js/app.js" type="text/javascript"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/tab.js"></script>
-<script>
-  new WOW().init();
-</script>
+	<script>
+	  new WOW().init();
+	</script>
 </body>
 </html>

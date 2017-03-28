@@ -109,7 +109,7 @@ body.second-page {
   padding: 5px 0 8px;
   position: relative;
   z-index: 1;
-  margin-bottom: 130px;
+  margin-bottom: 65px;
 }
 .header-top-line:after {
   content: "";
@@ -131,7 +131,7 @@ body.second-page {
   overflow: hidden;
   background-position: center center;
   text-align: center;
-  padding-bottom: 240px;
+  height: 240px;
 }
 .header-logo {
   position: absolute;
@@ -224,6 +224,10 @@ body.second-page {
   background-position: right;
   background-repeat: no-repeat;
   padding-right: 40px;
+  text-transform: uppercase;
+}
+.header-form__item select option {
+  text-indent: 15px;
 }
 .header-form__item input {
   width: 230px;
@@ -1360,7 +1364,7 @@ table td .table-item.edit-icon {
 }
 .checkout-list-step-item {
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   margin-left: 30px;
 }
@@ -1890,6 +1894,23 @@ textarea:focus:-ms-input-placeholder {
 .l-cab-button-add-container {
   margin-left: 15px;
   display: inline-block;
+}
+.cancel-list {
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+}
+.cancel-list li {
+  width: 48%;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.cancel-list li a {
+  color: #757575;
+}
+.cancel-list li:nth-child(even) {
+  float: right;
 }
 @media screen and (max-width: 1200px) {
   .header-top-line__inner,
