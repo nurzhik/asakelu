@@ -40,83 +40,116 @@
 		</header>
 		<div class="container">
 			<div class="container-inner">
-				<div class="admin-content__top">
-					<ul class="admin-nav">
-						<li>
-							<a href="">Обработка заказа  </a>
-						</li>
-						<li><a href="">Отзывы</a></li>
-						<li><a href="">Блюда</a></li>
-						<li><a href="">Приостоновить</a></li>
-						<li><a href="">История</a></li>
-					</ul>
-				</div>
-				<div class="side-bar">
-					<form action="" class="form">
-						<div class="side-bar-item">
-							<div class="side-bar-item__title">
-								блюдо:
-							</div>
-							<div class="side-bar-box">
-								<a href="" class="side-bar-box__link">
-									Тест2
-								</a>
-								<a href="" class="side-bar-box__link">
-									Тест2
-								</a>
-								<a href="" class="side-bar-box__link">
-									Тест2
-								</a>
-								<a href="" class="side-bar-box__link">
-									Тест2
-								</a>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="restaurants-box">
-					<div class="admin-edit-card">
-						<div class="stop-list__title">
-							<span>	название</span> <span>активный</span> 
-						</div>
-						<ul class="stop-list">
+				<div class="admin-content">
+					<div class="admin-content__top">
+						<ul class="admin-nav">
 							<li>
-								Тест 2
-								<span class="toggle-bg">
-									<input type="radio" name="toggle1" value="off">
-									<input type="radio" name="toggle1" value="on">
-									<span class="switch"></span>
-								</span>
+								<a href="">Инфо  </a>
 							</li>
-							<li>
-								Тест 2
-								<span class="toggle-bg">
-									<input type="radio" name="toggle2" value="off">
-									<input type="radio" name="toggle2" value="on">
-									<span class="switch"></span>
-								</span>
-							</li>
-							<li>
-								Тест 2
-								<span class="toggle-bg">
-									<input type="radio" name="toggle3" value="off">
-									<input type="radio" name="toggle3" value="on">
-									<span class="switch"></span>
-								</span>
-							</li>
-							<li>
-								Тест 2
-								<span class="toggle-bg">
-									<input type="radio" name="toggle4" value="off">
-									<input type="radio" name="toggle4" value="on">
-									<span class="switch"></span>
-								</span>
-							</li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Баланс</a></li>
 						</ul>
+					</div>
+					<div class="admin-edit-card">
+						<div class="add-food">
+							<div class="add-food__top">
+
+								<a href="" class="button add-food__button">Создать критерии</a>
+								<a href="" class="button add-food__button">Добавить блюдо</a>
+								<div class="add-food__top--filter">
+									<div class="add-food__top--filter__item">
+										<select name="" id="">
+											<option value="">Критерии</option>
+										</select>
+									</div>
+									<div class="add-food__top--filter__item">
+										<input type="text" placeholder="Название блюдо">
+									</div>
+									<div class="add-food__top--filter__item">
+										<button class="button">Поиск</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table-container add-food__form">
+								<table border="1">
+								    <tr>
+								        <th>Название</th>
+								        <th>Название блюдо</th>
+								        <th>Цена</th>
+								        <th>Описание</th>
+								        <th>фото</th>
+								        <th>Статус</th>
+								    </tr>
+								    <tr>
+								        <td>
+								        <select name="" id="">
+								       <option value="">Филадельфия</option>
+								        </select>
+								        </td>
+								        <td><input type="text" class="food-add-input" placeholder="Название блюдо"></td>
+								        <td><input type="text" class="food-add-input food-add-input--price"placeholder="Цена"></td>
+								        <td><textarea name="" id="" placeholder="Описание"></textarea></td>
+								        <td>
+											<div class="food-add__input-file">
+											<input type="file" id="foto1" class="input-file">
+											<label for="foto1" class="name-file">Выберите файл</label>
+										</div>
+								        </td>
+								        <td>
+											<a href="" class="delete-icon">x</a>
+											<a href="" class="stop"></a>
+											<button class="save"></button>
+								        </td>
+								    </tr>
+								    <tr>
+								        <td>
+								        <select name="" id="">
+								       <option value="">Филадельфия</option>
+								        </select>
+								        </td>
+								        <td><input type="text" class="food-add-input" placeholder="Название блюдо"></td>
+								        <td><input type="text" class="food-add-input food-add-input--price"placeholder="Цена"></td>
+								        <td><textarea name="" id="" placeholder="Описание"></textarea></td>
+								        <td>
+											<div class="food-add__input-file">
+											<input type="file" id="foto1" class="input-file">
+											<label for="foto1" class="name-file">Выберите файл</label>
+										</div>
+								        </td>
+								        <td>
+											<a href="" class="delete-icon">x</a>
+											<a href="" class="stop"></a>
+											<button class="save"></button>
+								        </td>
+								    </tr>
+								    <tr>
+								        <td>
+								        <select name="" id="">
+								       <option value="">Филадельфия</option>
+								        </select>
+								        </td>
+								        <td><input type="text" class="food-add-input" placeholder="Название блюдо"></td>
+								        <td><input type="text" class="food-add-input food-add-input--price"placeholder="Цена"></td>
+								        <td><textarea name="" id="" placeholder="Описание"></textarea></td>
+								        <td>
+											<div class="food-add__input-file">
+											<input type="file" id="foto1" class="input-file">
+											<label for="foto1" class="name-file">Выберите файл</label>
+										</div>
+								        </td>
+								        <td>
+											<a href="" class="delete-icon">x</a>
+											<a href="" class="stop"></a>
+											<button class="save"></button>
+								        </td>
+								    </tr>
+								</table>
+							</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 			
 				
 	

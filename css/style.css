@@ -80,6 +80,10 @@ body.second-page {
      background-size: cover;
   border: 1px solid #eee;
 }
+.header.video-header.second-page-header {
+    height: 100%;
+    max-height: 900px;
+}
 .header.video-header {
   /* background-image: url(../img/header-background.jpg); */
   background-position: center center;
@@ -127,10 +131,12 @@ body.second-page {
   background: #ffc713;
   display: inline-block;
   padding: 5px 15px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
   border: 1px solid #ffc713;
   color: #000;
+}
+.header-enter__button-enter.log-out {
+    width: 121px;
+    box-sizing: border-box;
 }
 .header.second-page-header .header-enter .header-enter__button-enter:hover {
   background-color: #ffaa00;
@@ -148,14 +154,12 @@ body.second-page {
   display: inline-block;
   padding: 0;
   margin-top: 32px;
-  margin-left: 166px;
+  margin-left: 134px;
 }
-.header-enter__button-reg {
+.header-top-line a.header-enter__button-reg {
   border: 1px solid #fff;
   display: inline-block;
   padding: 5px 10px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
   margin-right: 5px;
   font-size: 14px;
 }
@@ -172,6 +176,29 @@ body.second-page {
 .add-promo-kod.button {
   float: right;
   margin-bottom: 15px;
+}
+#modal_change_address {
+    height: 276px;
+}
+
+.modal-input__container select {
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow-down.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    text-transform: uppercase;
+    border-right: none;
+    margin-bottom: 25px;
 }
 .page {
   width: 100%;
@@ -243,12 +270,12 @@ body.second-page {
 }
 .header-lang__item.active:after,
 .header-lang__item:hover:after {
-  width: 0;
+  width: 100%;
 }
 .header-lang__item:after {
   content: '';
   height: 1px;
-  width: 100%;
+  width: 0;
   background: #fff;
   position: absolute;
   bottom: -1px;
@@ -294,7 +321,8 @@ body.second-page {
   padding: 15px 30px;
 }
 .header-form {
-  display: block;
+    display: block;
+    margin-top: 11.5%;
 }
 .header-form form {
   display: inline-block;
@@ -492,6 +520,10 @@ input:-ms-input-placeholder {
   display: inline-block;
   margin-bottom: 7px;
 }
+.index-card-item__title:hover {
+    text-decoration: none;
+    color: #008aff;
+}
 .index-seo-text {
   margin-bottom: 35px;
 }
@@ -687,12 +719,10 @@ a.side-bar-box:hover {
   margin-right: 43px;
 }
 .restaurants-box {
-  margin-left: 285px;
+  margin-left: 290px;
 }
 .restaurants-filtr__button--city {
-  position: absolute;
-  right: 0;
-  top: 10px;
+  float:right;
   padding: 10px 34px;
 }
 .restaurants-filtr__item {
@@ -711,19 +741,66 @@ a.side-bar-box:hover {
 }
 .restaurants-filtr__button {
   float: right;
-  width: 126px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 11px 34px;
+  padding: 11px 22px;
+}
+.restaurants-box.full-width {
+  margin-left: 0;
+}
+.admin-search-form__item.button-search {
+  margin-left: 25px;
+}
+.admin-edit-card__item__right select {
+  border: none;
+  width: 230px;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid #eeeeee;
+  color: #727272;
+  font-size: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../img/arrow-down.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+  text-transform: uppercase;
+}
+.admin-content__body table { 
+/* margin-top: 25px; */ 
+}
+.log-out:hover {
+  font-size: 0;
+}
+.header-enter.log-out {
+  width: 86px;
+}
+.log-out:hover:before {
+  display: inline-block;
+  font-size: 12px;
+}
+.log-out:before {
+  content: "Выйти";
+  display: inline-block;
+  display: none;
+}
+.autor-review {
+  padding: 14px 14px;
+  background: #fff;
+  font-weight: bold;
+  color: #00a3ff;
 }
 .restaurants-filtr__item-city {
   position: relative;
-  padding-right: 130px;
 }
 .restaurants-filtr__item-city span {
-  float: Left;
-  margin-top: 4px;
+    float: left;
+    margin-top: 4px;
+    display: block;
+    line-height: 28px;
 }
 .restaurants-filtr__item-city:after {
   content: '';
@@ -838,9 +915,10 @@ a.side-bar-box:hover {
   margin-left: 10px;
 }
 .restaurant-info__item {
-  color: #757575;
-  font-size: 14px;
-  line-height: 1.2;
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 7px;
 }
 .restaurant-info__item span {
   font-weight: bold;
@@ -856,6 +934,7 @@ a.side-bar-box:hover {
   float: left;
   margin-top: 18px;
 }
+
 .delivery-time span {
   text-transform: uppercase;
   color: #008aff;
@@ -1019,6 +1098,10 @@ a.side-bar-box:hover {
   display: inline-block;
   margin: 0 9px;
 }
+.admin-nav li:hover a {
+    color: #008aff;
+    text-decoration: none;
+}
 .admin-nav li:first-child {
   margin-left: 0;
 }
@@ -1154,6 +1237,28 @@ table td .table-item.edit-icon {
   right: auto;
   top: auto;
   margin-top: 0;
+  margin-bottom: 15px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.table-item.show.show-icon {
+  padding: 0;
+  display: block;
+  float: none;
+  margin-bottom: 5px;
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/show.png);
+  border: none;
+}
+table tr th:last-child a {
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/add.png);
 }
 .select-search select {
   width: 230px;
@@ -1479,15 +1584,20 @@ table td .table-item.edit-icon {
   margin-bottom: 15px;
 }
 .checkout-list-step-item {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    background-image: url(../img/arrow-step.png);
+    padding: 15px 30px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 7px;
 }
-.checkout-list-step-item.active,
-.checkout-list-step-item:hover {
-  color: #008aff;
-  cursor: pointer;
+.checkout-list-step-item.active, .checkout-list-step-item:hover {
+    color: #fff;
+    cursor: pointer;
+    background-image: url(../img/arrow-spet-activ.png);
+    background-size: cover;
 }
 .checkout-form {
   padding: 0;
@@ -1687,10 +1797,31 @@ table td .table-item.edit-icon {
   display: none;
 }
 .stop {
-  background: #e01919;
+    padding: 0;
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/stop.png);
+    border: none;
+        display: block;
+    margin: 0 auto 5px;
 }
-.stop:hover {
-  background: #e01919;
+.save {
+    padding: 0;
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/ok.png);
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+        display: block;
+    margin: 0 auto 5px;
 }
 .admin-edit-card.add-promo-kod input {
   width: 40%;
@@ -1738,7 +1869,7 @@ textarea:focus:-ms-input-placeholder {
   bottom: 0;
   border: 0;
   right: 0;
-  height: 350px;
+  height: 291px;
   top: 0;
   display: none;
   opacity: 0;
@@ -1749,6 +1880,9 @@ textarea:focus:-ms-input-placeholder {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow: auto;
+}
+#modal_registr {
+  height: 332px;
 }
 .modal_div.registar-zav {
   height: 450px;
@@ -1802,6 +1936,7 @@ textarea:focus:-ms-input-placeholder {
   padding-top: 15px;
   padding-left: 25px;
   padding-right: 25px;
+  overflow: hidden;
 }
 .modal-input__container input {
   width: 100%;
@@ -1815,7 +1950,13 @@ textarea:focus:-ms-input-placeholder {
 .modal-link {
   color: #727272;
   text-align: right;
-  display: block;
+  float: right;
+}
+.modal-link:hover {
+    text-decoration: none;
+}
+.modal-link:nth-child(2n) {
+  float: left;
 }
 .modal-button-container {
   padding-bottom: 15px;
@@ -2190,19 +2331,214 @@ textarea:focus:-ms-input-placeholder {
   font-weight: bold;
   text-transform: uppercase;
 }
+.index-soc-seti__container {
+  text-align: center;
+}
 .index-soc-seti {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
+  display: inline-block;
+}
+.index-soc-seti span {
+  float: left;
+  margin-right: 15px;
 }
 .soc-seti-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  float: right;
+  float: left;
 }
 .soc-seti-list li {
   display: inline-block;
+}
+.static-text {
+  width: 48%;
+  float: left;
+}
+.static-img {
+  float: right;
+  width: 48%;
+}
+.static-block {
+  overflow: hidden;
+}
+.customer-edit-card-container {
+  margin: 0px 0 25px;
+}
+.admin-edit-card__item.button-customer {
+  margin-top: 25px;
+}
+#ui-id-1 {
+  background: #ffffff !important;
+  height: auto!important;
+}
+.title-item.static-page {
+  background: #f4f0d9;
+}
+.delete-icon {
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/delete.png);
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    display: block;
+    margin: 0 auto 5px;
+}
+.button.next-step.hide {
+  display: none;
+}
+.restaurants-box.full-width select {
+    border: none;
+    width: 230px;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow-down.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.restaurants-box.full-width input {
+    width: 230px;
+    height: 37px;
+    text-indent: 15px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    margin-bottom: 15px;
+}
+.restaurants-box.full-width textarea {
+    resize: none;
+    width: 40%;
+    height: 127px;
+    text-indent: 15px;
+    font-size: 14px;
+    border: 1px solid #eeeeee;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.product-add-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #757575;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.product-add-list li {
+  margin-bottom: 7px;
+}
+.product-add-list li:last-child{
+  margin-bottom: 0;
+}
+.table-container.add-food__form select {
+    border: none;
+    width: 180px;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow-down.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+.food-add-input {
+    width: 100%;
+    height: 37px;
+    text-indent: 15px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+}
+.food-add-input.food-add-input--price {
+    width: 150px;
+}
+.table-container.add-food__form textarea {
+    text-indent: 15px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    resize: none;
+    width: 100%;
+    padding: 5px;
+    height: 70px;
+    box-sizing: border-box;
+}
+.food-add__input-file label {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    font-size: 14px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    padding-left: 0;
+    display: block;
+        min-width: 200px;
+}
+.food-add__input-file input {
+    display: none;
+}
+.add-food__top {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.add-food__top--filter {
+    margin-top: 15px;
+}
+.add-food__top--filter__item {
+    display: inline-block;
+    margin-right: 15px;
+}
+.add-food__top--filter__item select {
+    border: none;
+    width: 180px;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow-down.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+.add-food__top--filter__item input {
+    width: 230px;
+    height: 37px;
+    text-indent: 15px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+    color: #727272;
+}
+.button.add-food__button:first-child {
+    margin-right: 15px;
 }
 @media screen and (max-width: 1200px) {
   .header-top-line__inner,
@@ -2213,6 +2549,10 @@ textarea:focus:-ms-input-placeholder {
   .container-inner {
     width: auto;
     padding: 0 15px;
+  }
+  .header.second-page-header .header-lang {
+      position: absolute;
+      right: 15px;
   }
   .index-card-container {
     overflow: hidden;
@@ -2284,6 +2624,11 @@ textarea:focus:-ms-input-placeholder {
   .checkout-content__right {
     width: 35%;
   }
+  .header.second-page-header .header-slogan {
+      font-size: 24px;
+      margin-top: 37px;
+      margin-left: 110px;
+  }
 }
 @media screen and (max-width: 850px) {
   .index-card-list {
@@ -2313,6 +2658,10 @@ textarea:focus:-ms-input-placeholder {
   .admin-edit__left {
     width: 45%;
   }
+  #basket-side-bar {
+    position: static!important;
+    top: auto!important;
+}
 }
 @media screen and (max-width: 750px) {
   .admin-content__item-left {
@@ -2339,6 +2688,9 @@ textarea:focus:-ms-input-placeholder {
   .admin-search-form__item {
     margin-bottom: 15px;
   }
+  .header.second-page-header .header-slogan {
+    display: none;
+}
 }
 @media screen and (max-width: 700px) {
   .header-form {
@@ -2434,6 +2786,9 @@ textarea:focus:-ms-input-placeholder {
     float: right;
     margin-left: 0;
   }
+  .restaurants-box.full-width textarea {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 610px) {
   .checkout-content__left {
@@ -2480,6 +2835,12 @@ textarea:focus:-ms-input-placeholder {
   .admin-edit-card__item {
     margin-bottom: 15px;
   }
+  .index-inform {
+    display: none;
+  }
+   .restaurants-box.full-width textarea {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 460px) {
   .index-card-list li {
@@ -2516,6 +2877,7 @@ textarea:focus:-ms-input-placeholder {
     float: left;
     margin-bottom: 15px;
   }
+
 }
 @media screen and (max-width: 415px) {
   .header-lang {
@@ -2591,6 +2953,23 @@ textarea:focus:-ms-input-placeholder {
   .button.l-cab-button {
     margin-left: 0;
     margin-top: 15px;
+  }
+  .header.second-page-header .header-enter {
+      text-align: right;
+      float: right;
+      margin-top: 25px;
+  }
+   .header.second-page-header .header-top-line a.header-enter__button-reg {
+      margin-right: 0;
+      display: block;
+      margin-bottom: 10px;
+  }
+  .header-logo {
+      width: 120px;
+      margin-top: 8px;
+  }
+  .header-logo img {
+      width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
